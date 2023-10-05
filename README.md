@@ -1,6 +1,6 @@
-# Nuxt Studio Theme Starter
+# Nuxt Layer Starter
 
-Create a compatible [Nuxt Studio](https://nuxt.studio) theme with this GitHub template.
+Create Nuxt extendable layer with this GitHub template.
 
 ## Setup
 
@@ -20,7 +20,7 @@ Running `pnpm dev` will prepare and boot `.playground` directory, which imports 
 
 ## Distributing your theme
 
-Your Nuxt theme is shaped exactly the same as any other Nuxt project, except you can publish it on NPM.
+Your Nuxt layer is shaped exactly the same as any other Nuxt project, except you can publish it on NPM.
 
 To do so, you only have to check if `files` in `package.json` are valid, then run:
 
@@ -34,10 +34,10 @@ Once done, your users will only have to run:
 npm install --save your-theme
 ```
 
-Then add the dependency to their `extends` in `nuxt.config.ts`:
+Then add the dependency to their `extends` in `nuxt.config`:
 
 ```ts
-export default defineNuxtConfig({
+defineNuxtConfig({
   extends: 'your-theme'
 })
 ```

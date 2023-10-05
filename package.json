@@ -1,29 +1,22 @@
 {
-  "name": "nuxt-vuetify-layer",
+  "name": "my-nuxt-layer",
   "type": "module",
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
-  "files": [
-    "nuxt.config.ts",
-    "tokens.config",
-    "layouts",
-    "plugins",
-    "components",
-    "app.vue"
-  ],
   "scripts": {
-    "dev": "nuxi dev .starters/default",
-    "build": "nuxi build .starters/default",
-    "generate": "nuxi generate .starters/default",
-    "preview": "nuxi preview .starters/default",
-    "prepare": "nuxi prepare && nuxi prepare .starters/default",
-    "lint": "eslint ."
+    "dev": "nuxi dev .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint .",
+    "postinstall": "nuxt prepare .playground"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/devtools": "1.0.0-beta.0",
+    "@nuxt/eslint-config": "0.2.0",
     "eslint": "^8.50.0",
     "nuxt": "^3.7.4",
-    "typescript": "^5.2.2"
+    "typescript": "5.2.2"
   },
   "dependencies": {
     "vuetify": "^3.3.20"
